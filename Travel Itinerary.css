@@ -1,0 +1,150 @@
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            background-image: url('Summer-Background.svg');
+            background-size: cover;
+            background-position: center;
+            color: #000000;
+        }
+        /* Headings - currently 5rem fixed */
+        .intro h1,
+        .destinations h2,
+        .accommodation h2,
+        .car-rental h2,
+        .activities h2 {
+            font-size: clamp(2rem, 5vw, 5rem);
+            }
+        /* Body text - currently 20px fixed */
+        .intro p,
+        .car-rental p,
+        .destinations_list,
+        .accommodation_list,
+        .activities_list {
+            font-size: clamp(14px, 2vw, 20px);
+            } 
+
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .intro h1 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            }
+        
+   
+        .intro p {
+            width: 90%;
+            max-width: 900px;
+            padding: 0 20px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .image-section {
+            margin: 20px auto;
+            width: 100%;
+        }   
+        .destinations h2{
+            display: flex;
+            justify-content: center;
+        }  
+        .destinations_list {
+            list-style: none;
+            padding: 0 20px;
+            margin: 0 auto;
+            width: 90%;
+            max-width: 900px;
+            font-size: 20px;
+        }
+        
+        .destinations_list li {
+            text-align: center;
+            padding: 5px 0;
+        } 
+        .image-section-2 {
+            padding: 20px 0;
+        }
+        .accommodation h2 {
+            display: flex;
+            justify-content: center;
+        }
+        .accommodation_list {
+            list-style: none;
+            padding: 0 20px;
+            margin: 0 auto;
+            width: 90%;
+            max-width: 900px;
+            font-size: 20px;
+        }
+        
+        .accommodation_list li {
+            text-align: center;
+            padding: 5px 0;
+        }
+        .car-rental h2 {
+            display: flex;
+            justify-content: center;
+        }
+        .car-rental p {
+            width: 90%;
+            max-width: 900px;
+            padding: 0 20px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .activities h2 {
+            display: flex;
+            justify-content: center;
+        }
+        .activities_list {
+            list-style: none;
+            padding: 0 20px;
+            margin: 0 auto;
+            width: 90%;
+            max-width: 900px;
+            font-size: 20px;
+        }
+        
+        .activities_list li {
+            text-align: center;
+            padding: 5px 0;
+        }
+        
+        .activities_list iframe {
+            width: 100%;
+            max-width: 560px;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            margin: 50px auto;
+            display: block;
+        }
+        /* TABLET */
+@media (max-width: 1024px) {
+    body {
+        background-size: contain;
+    }
+}
+        /* MOBILE */
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+        background-position: top center;
+    }
+}
+        /* SMALL MOBILE */
+@media (max-width: 480px) {
+    body {
+        background-size: cover;
+        background-position: top center;
+    }
+}
